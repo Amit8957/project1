@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning alert promt and confirm </title>
+</head>
+<body>
+    <div class="container">
+        <h1>hey who is there</h1>
+    </div>
+    <script>
+        //making  aalert  pop up box while we are filling form yhis is also called modeled window untilwe not press ok this not get closed
+       // alert("  this is a message Do you want to confir to submit ");
+        //not return anything
+        //promt in js
+       // let name=  prompt("what is your name" ,"Guest");
+       // console.log(name);//anything input by user is print onthe screenof layout 
+        //confirm is used when you are deleting any file any want to give warning while deleting anything
+        //return the true when you want to delete and flase when you not want delete  
+        //confirm in js
+        let deletingPost=confirm("Do you really want to deleting the post ");
+        //console.log (deletingPost);
+        if(deletingPost)
+        //code to delete the post
+        {
+            console.log("your post is deleted succsefully")
+        }
+        else{
+            //code to cancel the deletion ofthe post 
+            console.log('your post has not been deleted')
+        }
+        
+        
+
+    </script>
+</body>
+</html>

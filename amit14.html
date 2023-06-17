@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+.grid{
+    
+    display: grid;
+    grid-template-columns: 1fr    1fr 1fr 1fr 1fr      ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  /*  grid-row-gap: 3rem;
+    grid-column-gap: 2rem;*/
+    grid-gap: 1rem
+    ;
+}
+.box{
+    padding: 53px;
+    background-color: aqua;
+    border: 2px solid black;
+}
+.box:first-child{
+    grid-column-start: 1;/* grid ka coloumn start hoga 1 se and end hoga 3 tak grid ko span kar dega*/
+    grid-column-end: 4;
+    grid-row-start: 1;/*grid ki 1st boundary se start hogi and end 3rd boundary par hogi */
+    grid-row-end: 3;
+    grid-column: 1/span 4;/* shor me likhne ka tarika ahi grid ko span karne ka same for grid row*/
+}
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box" > this is item 1</div>
+        <div class="box" > this is item 2</div>
+        <div class="box" > this is item 3</div>
+        <div class="box" > this is item 4</div>
+        <div class="box" > this is item 5</div>
+        <div class="box" > this is item 6</div>
+        <div class="box" > this is item 7</div>
+        <div class="box" > this is item 8</div>
+        <div class="box" > this is item 9</div>
+        <div class="box" > this is item 10</div>
+        <div class="box" > this is item 1</div>
+        <div class="box" > this is item 1</div>
+        <div class="box" > this is item 1</div>
+        <div class="box" > this is item 1</div>
+        
+    </div>
+</body>
+</html>

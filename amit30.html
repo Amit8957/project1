@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript date and time and making watch</title>
+</head>
+<style>
+    .container{
+        font-size: 23px;
+        background-color: aqua;
+        border: 2px solid black;
+        padding: 34px;
+        margin: 4px;
+    }
+    #time{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        this is container
+        current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("prininting the date and time");
+        let now =new Date();//here this  is constructor Date()
+        console.log(now);//here wesimply print the date
+
+
+    //this print the date from starting where the computer take the refrence   1st of jan 
+//let dt=new Date(1000);//here 1000 milli second means that first time se kitna time beet chuka hai
+//console.log(dt);
+
+
+
+//another way to initialise the date any
+//let newDate =new Date("2023-08-2");
+//console.log(newDate);
+
+
+//one another way to print the date
+//let newDate=new Dtae(year ,month,date , hours ,minutes,second ,millisecond);
+
+
+let newDate =new Date(3020,5,6,9,3,2);
+console.log(newDate);
+
+
+let yr=newDate.getFullYear();
+console.log("this year is ",yr);
+
+let dat=newDate.getDate();
+console.log("this date is ",dat);
+
+let month=newDate.getMonth();
+console.log("this month is ",month);
+
+let hours=newDate.getHours();
+console.log("this hours is ",hours);
+
+let m=newDate.getHours();
+console.log("this hours is ",m);
+
+
+newDate.setDate(10);
+newDate.setMinutes(39);
+console.log(newDate);
+
+//with this function we can make watch running on our compter
+setInterval(updateTime,1000);
+function updateTime(){
+    time.innerHTML =new Date();
+}
+
+
+    </script>
+</body>
+</html>

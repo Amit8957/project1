@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+
+            display: grid;
+            grid-gap: 1rem;
+          /*  grid-template-columns: 150px 150px 150px;
+             justify-content: center;
+             align-items: center;*/
+             grid-template-columns: repeat(auto-fit ,minmax(400px ,1fr));/* autorepeat me repat karega as our reqired and minmaxmeans min kardo400px and max kardo 1fr*/
+/*responsive dikhane ke liye kiya tha */
+
+
+            }
+        .box{
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 35px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> item1</div>
+        <div class="box"> item2</div>
+        <div class="box"> item3</div>
+        <div class="box"> item4</div>
+        <div class="box"> item5</div>
+        <div class="box"> item6</div>
+        <div class="box"> item7</div>
+        <div class="box"> item8</div>
+        <div class="box"> item9</div>
+        <div class="box"> item10</div>
+        <div class="box"> item11</div>
+        <div class="box"> item12</div>
+        <div class="box"> item13</div>
+        <div class="box"> item14</div>
+    </div>
+</body>
+</html>

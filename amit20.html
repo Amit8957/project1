@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+        <li>item6</li>
+        <li>item7</li>
+        <li>item8</li>
+        </ul>
+    </div>
+    <script>
+        var string1 ="this is a string";
+        var string1 ="this is a string2";
+        console.log(string1);//jo var ka scpoe hota hai bo globally hota hai lekin let ka scpoe variable declare karne me block size me hi hota hai
+        let a="u";
+        {
+            let a="u6";
+            console.log(a);
+        }
+        console.log(a);
+        //variab;e declaration using let only scope in a block
+        //const se varible declare karke usko change nhi kar sakte
+        const b = 'this  cannot be change';
+       // b="what are you doing this cannot be changed";
+        console.log(b);
+        let  age =2;
+        if(age>18)  //if else ladder
+        {
+            console.log("you can drink water");
+
+        }
+        else if(age==2)
+        {
+            console.log("you can drink tea");
+        }
+        else{
+            console.log("you can drink cold drink");
+        }
+        //switch case statement
+        const cups=45;
+        switch (cups) {
+            case 1:
+                console.log("the value of cups is 4")
+                break;
+            case 2:
+                console.log("the value of cups is 79")
+                break;
+              
+            case 3:
+                console.log("the value of cups is 86")
+                break;
+            case 4:
+                console.log("the value of cups is 56")
+                break;
+            case 45:
+                console.log("the value of cups is 100") 
+                break;
+        
+            default:
+                console.log("the value of is none")
+                break;
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script settimeout and cleartimeout</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span> 
+    </div>
+    <script>
+        console.log ("hello friends");
+        //SetTimeout  allows us to run the function once afterthe interval of time 
+        //clearTimeout    allows us to runthe function repeatedly after the intervalof time 
+        function greet(   name,byeText) {
+            console.log("hello good morning " ,"Take care");
+            
+        }
+      // timeOut= setTimeout(greet, 5000 ,"amit" ,"take care");
+       // console.log(timeOut);//this is sued to remove time set by using some logic agar hame user to some time wait karwana ho so after some tiime user can signupinto page
+    //clearTimeout(timeOut);
+       // setTimeout(greet, 5000 ,"amit" ,"take care");//here greet function not used the bracket
+     // intervalId= setInterval(greet,4000);//4 bar run hoga and 4likh kar aane lagega
+     // clearInterval(intervalId)//hence givencode not run and get clear out
+//displaying time 
+function displayTime() {
+    time=new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+}
+setInterval(displayTime,1000);
+
+
+
+
+
+    </script>
+</body>
+</html>

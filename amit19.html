@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java string string position</title>
+</head>
+<body>
+    <script>
+        var str='what is what are you doing here and my name is amit';
+        console.log(str);
+        var position  =  str.indexOf('is');//kisi ki postion ko locate karne ke liye hota hai first occurence of a substring
+        position  =  str.lastIndexOf('is');
+        //same for last string ki index find kar sakte hai
+        //ham yaha var na likhe tab bhi chalega lekin one times hame var likna padega 
+        console.log(position);
+        //substring from a string 
+        var substr=str.slice(3,10);
+        var substr=str.substring(6,10);//sliceand subtring same hi hai but slice can take negative values but subtring can take only positive value
+        //function substr tells the length of words from begining to the end it starts from the index zero
+        var substr1=str.substr(5,30);
+        console.log(substr1);
+        console.log(substr);
+        //replacing a string form a substring 
+        var replaced=str.replace('what','Amit');
+        console .log(str.toUpperCase());//print the string in uppercase letter same for lower case letter
+
+        console.log(replaced);
+        var newString=str.concat('here new string is concatenated withis the old string ')
+        console.log(newString);//new string get concatenated
+        var startwithwhitespacses ="            this contain               white spaces         ";
+        console.log(  startwithwhitespacses  );
+        console.log(  startwithwhitespacses.trim())//starting se and end se white spces ko trim kar dega and middle me kuch bhi nhi karega
+        //index par jo character return kar do str.charAt()
+        var char2=str.charAt(5);
+        console.log(char2);
+        //charCodeAt() this function returns the character code jo us character ka ahi means utf character code
+        
+
+    </script>
+</body>
+</html>

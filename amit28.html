@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS events</title>
+    <style>
+        #btn{
+            padding: 34px;
+            color: rgb(246, 250, 252);
+            border: 2px solid black;
+            background-color: brown;
+            
+        }
+    </style>
+</head>
+<body>
+   <!--Browser events
+click
+    context menu   
+    mouseover
+    mouseout
+    mousedown
+    mouseup
+    mousemove
+    submit button  
+    focus
+    domcontent loaded
+    tarnsitioned 
+   -->
+   <div class="container">
+   <h1>this is my heading</h1>
+   <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque enim qui quos quis recusandae distinctio voluptates, optio mollitia architecto, labore repellendus beatae commodi minima non assumenda. Illum adipisci nesciunt quo.
+   Consequatur voluptatem cupiditate deleniti. Eum exercitationem amet voluptas iure minima impedit, culpa nemo, facere tempore magni reiciendis, quaerat similique doloremque eligendi. A modi, consequuntur quas dolore iste et doloribus numquam?
+   Dolor et, quod quasi iure corrupti nobis necessitatibus tempore laudantium beatae aperiam, molestiae vel eaque officiis alias non neque expedita, ullam dolores dignissimos cupiditate. Quidem dolores eveniet aliquam autem fuga?
+   Perferendis, earum numquam. Culpa facilis, suscipit aspernatur voluptate molestias iure corrupti odio ullam optio. Ad, dolorum architecto, necessitatibus ipsam quas sapiente magni distinctio hic provident numquam beatae impedit, ex velit.</p>
+   </div>
+<button id="btn"  onclick="toggleHide()"">show/hide</button>
+<script>
+let para =document.getElementById('para') ;
+para.addEventListener('mouseover',function run(){
+    console.log('Mouse now went inside the text')
+});
+
+
+para.addEventListener('mouseout',function run(){
+    console.log('mouse now went outside the paragraph')
+});
+
+
+
+
+    
+    function toggleHide() {
+        let  btn=document.getElementById('btn');
+        let para =document.getElementById('para') ;
+     if(para.style.display!='none'){
+
+         para.style.display='none';
+     }
+     else{
+        para.style.display='block';
+     }
+    }
+</script>
+</body>
+</html>

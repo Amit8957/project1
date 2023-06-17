@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <div class="container">
+        here we learing arrow function
+    </div>
+    <script>
+     //   function greet(){
+       //     console.log('good morning');
+       //this is arrow function 
+        greet=() =>{
+            console.log('good morning friends');
+        }
+        greet();
+
+setTimeout(() => {
+    console.log("here we are setTimeout")
+    
+}, 4000);
+
+let sum=(a,b)=>{
+    return  a+b;
+};
+
+//we can also write it as
+let sum2=(a,b)=> a+b;
+let half=a=>a/2;
+
+
+//here we are making object and printing it
+// here this is of parent and also a called lexical this  
+
+let obj1={
+    greeting:"good morning",
+    name:["amit" ,"rohan" ,"sohan"," mohan"],
+    speak(){
+        this.name.forEach((student)  => {
+console.log( this.greeting      +"hello friends  "  +"" +   student);
+        });
+    }
+}
+obj1.speak();
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
